@@ -1,2 +1,1 @@
-# heroku_django_bokeh
-Interactive Data Visualization on Django server deployed on Heroku
+# heroku_bokeh_2
