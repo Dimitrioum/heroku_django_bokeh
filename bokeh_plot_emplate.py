@@ -30,8 +30,8 @@ df2 = bv2[(bv2['Секция №1 Температура НП, t°'] < bv2['Се
 df1['время формирования точки на БВ'] = pd.to_datetime(df1['время формирования точки на БВ'], format='%d/%m/%Y')
 df2['время формирования точки на БВ'] = pd.to_datetime(df2['время формирования точки на БВ'], format='%d/%m/%Y')
 
-p1 = figure(x_axis_type='datetime', sizing_mode='scale_both')
-p2 = figure(x_axis_type='datetime', sizing_mode='scale_both')
+p1 = figure(x_axis_type='datetime', sizing_mode='scale_width')
+p2 = figure(x_axis_type='datetime', sizing_mode='scale_width')
 # p1.extra_y_ranges = {"binary": Range1d(start=-2, end=2)}
 aline = p1.circle(df1['время формирования точки на БВ'], df1['Секция №1 Температура НП, t°'], line_width=2, color=Category10[0])
 bline = p1.circle(df1['время формирования точки на БВ'], df1['Секция №3 Температура НП, t°'], line_width=2, color=Category10[4])
